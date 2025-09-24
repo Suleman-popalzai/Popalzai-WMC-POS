@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=StudentTest
+comment0.text=\r\n\ Die\ Test-Klasse\ StudentTest.\r\n\r\n\ @author\ \ Suleman\ Popalzai\r\n\ @version\ 24.09.2025\r\n
+comment1.params=
+comment1.target=void\ testBMI_Normalgewicht()
+comment2.params=
+comment2.target=void\ testBMI_Untergewicht()
+comment3.params=
+comment3.target=void\ testBMI_Uebergewicht()
+numComments=4

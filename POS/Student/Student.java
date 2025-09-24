@@ -1,76 +1,94 @@
-public class Student
-{
+public class Student {
     private String name;
     private float kg;
     private int cm;
     private char gender;
 
-    // Constructor
-    // name: mind. 3 char, max 50
-    public Student (String name, float kg, int cm, char gender) {
-        this.setName(name);
-        this.setKg(kg);
-        this.setCm(cm);
-        this.setGender(gender);
+    public Student(String name, float kg, int cm, char gender) {
+        setName(name);
+        setKg(kg);
+        setCm(cm);
+        setGender(gender);
     }
-    // setter für name
-    public void setName (String name) {
-        // TODO separate Meldungen zu kurz bzw. zu lang
-        if ((name.length() < 3) || (name.length() > 50)) {
-            throw new IllegalArgumentException("Name muss 3-50 Buchstaben haben");
+
+    public Student(String name, boolean isMann, int cm, int kg) {
+        setName(name);
+        setKg(kg);
+        setCm(cm);
+        setGender(isMann ? 'm' : 'w'); // hier habe ich 'w' statt 'f' genommen, damit es passt
+    }
+
+    public void setName(String name) {
+        if (name.length() < 3 || name.length() > 50) {
+            throw new IllegalArgumentException("Name muss 3-50 Zeichen haben");
         }
-        // Ab hier weiss ich dass name meinen Kriterien entspricht
         this.name = name;
     }
 
-    // setter für kg
-    public void setKg (float kilogramm) {
-        if((kilogramm<2)|| (kilogramm<635)){
-            throw new IllegalArgumentException("Kilo muss 2-635 gramm sein");
+    public void setKg(float kg) {
+        if (kg < 2 || kg > 635) {
+            throw new IllegalArgumentException("Ungültiges Gewicht");
         }
-        this.kg = kilogramm;
+        this.kg = kg;
     }
 
-    // setter für cm
-    public void setCm (int cm) {
-        if ((cm<50)|| (cm<250)){
-          throw new IllegalArgumentException("Cm muss 50-250 Gross sein");}
-          
+    public void setCm(int cm) {
+        if (cm < 50 || cm > 250) {
+            throw new IllegalArgumentException("Ungültige Größe");
+        }
         this.cm = cm;
     }
-    // SETTer gender
-    public void setGender (char g) {
-        // akzeptiere hier nur 'm' oder 'f' sowie 'M' oder 'F'
-        g = Character.toLowerCase(g);
-        // jetzt ist g mit Sicherheit klein
-        if ((g != 'm') && (g != 'f')) {
-            throw new IllegalArgumentException("Gender darf nur m oder f sein. Ich nammat sogar Großbuchstaben.");            
+
+    public void setGender(char gender) {
+        gender = Character.toLowerCase(gender);
+        if (gender != 'm' && gender != 'w') {
+            throw new IllegalArgumentException("Geschlecht muss m oder w sein");
         }
-        this.gender = g;
+        this.gender = gender;
     }
 
-    public void setGenderBal (char g) {  // TEst auf GUT
-        // akzeptiere hier nur 'm' oder 'f' sowie 'M' oder 'F'
-        g = Character.toLowerCase(g);
-        // jetzt ist g mit Sicherheit klein
-        if (g == 'f' || g == 'm') {  // also gültig
-            this.gender = g;
-            return;
-        } 
-        throw new IllegalArgumentException("Gender darf nur m oder f sein. Ich nammat sogar Großbuchstaben.");
-    }
-    // calculate bmi
-    public float bmi () {
-        return this.kg/((this.cm/100.0f)*(this.cm/100.0f));
+    // BMI berechnen: Gewicht durch Größe in Metern zum Quadrat
+    public float bmi() {
+        float meter = cm / 100.0f;
+        return kg / (meter * meter);
     }
 
-    public String mannOderFrau () {
-        if (this.gender == 'm') return "männlich";
-        // this.
-        return "weblich";
+    // Alias für die Tests
+    public float getBMI() {
+        return bmi();
     }
 
-    public String toString () {
-        return "Name: " + this.name + " (" + this.mannOderFrau() + ")";
+    public String gewichtsklasse() {
+        float bmi = this.getBMI();  // zuerst BMI berechnen
+
+        if (bmi < 16f) {
+            return "starkes Untergewicht";
+        } else if (bmi < 17f) {
+            return "mäßiges Untergewicht";
+        } else if (bmi < 18.5f) {
+            return "leichtes Untergewicht";
+        } else if (bmi < 25f) {
+            return "Normalgewicht";
+        } else if (bmi < 30f) {
+            return "Übergewicht (Präadipositas)";
+        } else if (bmi < 35f) {
+            return "Adipositas Grad I";
+        } else if (bmi < 40f) {
+            return "Adipositas Grad II";
+        } else {
+            return "Adipositas Grad III";
+        }
+    }
+
+    public String mannOderFrau() {
+        return (gender == 'm') ? "männlich" : "weiblich";
+    }
+
+    public String printStudent() {
+        return "Name: " + name
+             + " (" + mannOderFrau() + "), "
+             + kg + "kg, "
+             + cm + "cm ("
+             + gewichtsklasse() + ")";
     }
 }
