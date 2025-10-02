@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.target=Auto
+comment0.text=\r\n\ Beschreiben\ Sie\ hier\ die\ Klasse\ Auto.\r\n\ \r\n\ @author\ (Ihr\ Name)\ \r\n\ @version\ (eine\ Versionsnummer\ oder\ ein\ Datum)\r\n
+comment1.params=kennzeichen\ sitze
+comment1.target=Auto(java.lang.String,\ int)
+comment10.params=
+comment10.target=void\ aussteigen()
+comment11.params=
+comment11.target=java.lang.String\ info()
+comment2.params=kennzeichen
+comment2.target=void\ setKennzeichen(java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ getKennzeichen()
+comment4.params=sitze
+comment4.target=void\ setSitze(int)
+comment5.params=
+comment5.target=int\ getSitze()
+comment6.params=
+comment6.target=int\ getDrin()
+comment7.params=personen
+comment7.target=void\ einsteigen(int)
+comment8.params=personen
+comment8.target=void\ aussteigen(int)
+comment9.params=
+comment9.target=void\ einsteigen()
+numComments=12
