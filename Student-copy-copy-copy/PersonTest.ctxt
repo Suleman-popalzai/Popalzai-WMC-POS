@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.target=PersonTest
+comment0.text=\r\n\ Test-Klasse\ f\u00FCr\ Student\r\n\ Wir\ testen\:\r\n\ \ -\ 3\ M\u00E4nner\ (Untergewicht,\ Normalgewicht,\ \u00DCbergewicht)\r\n\ \ -\ 3\ Frauen\ (Untergewicht,\ Normalgewicht,\ \u00DCbergewicht)\r\n\ \ -\ Fehler\ im\ Konstruktor\r\n
+comment1.params=
+comment1.target=void\ testMannUntergewicht()
+comment10.params=
+comment10.target=void\ testFalschesGender()
+comment2.params=
+comment2.target=void\ testMannNormalgewicht()
+comment3.params=
+comment3.target=void\ testMannUebergewicht()
+comment4.params=
+comment4.target=void\ testFrauUntergewicht()
+comment5.params=
+comment5.target=void\ testFrauNormalgewicht()
+comment6.params=
+comment6.target=void\ testFrauUebergewicht()
+comment7.params=
+comment7.target=void\ testNameZuKurz()
+comment8.params=
+comment8.target=void\ testGroesseZuKlein()
+comment9.params=
+comment9.target=void\ testGewichtZuKlein()
+numComments=11

@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=AutoTest
+comment0.text=\r\n\ Die\ Test-Klasse\ AutoTest.\r\n\r\n\ @author\ \ (Ihr\ Name)\r\n\ @version\ (eine\ Versionsnummer\ oder\ ein\ Datum)\r\n
+comment1.params=
+comment1.target=void\ testEinUndAussteigen()
+comment2.params=
+comment2.target=void\ testZuVieleSteigenEin()
+comment3.params=
+comment3.target=void\ testMehrAussteigenAlsDrin()
+comment4.params=
+comment4.target=void\ testFalscheWerte()
+numComments=5
