@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+so sieht meine code  aus was sagst du ob es stimmt oder falsch ist ;<!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
@@ -11,14 +11,14 @@
     <main class="calculator">
         <input id="display" class="display" type="text" value="0" disabled>
         <div class="buttons">
-            <button onclick="setOperator('0')">0</button>
-            <button onclick="setOperator('-')">NAN</button>
-            <button onclick="setOperator('*')">*</button>
-            <button onclick="setOperator('/')">/</button>
+            <button class="operator" onclick="clearDisplay()">AC</button>
+            <button class="operator" onclick="appendToDisplay('+/-')">+/-</button>
+            <button class="operator" onclick="appendToDisplay('%')">%</button>
+            <button class="operator" onclick="appendToDisplay('÷')">÷</button>
             <button onclick="appendToDisplay('7')">7</button>
             <button onclick="appendToDisplay('8')">8</button>
             <button onclick="appendToDisplay('9')">9</button>
-            <button class="operator" onclick="appendToDisplay('×')">×</button>
+            <button class="operator" onclick="appendToDisplay('*')">*</button>
             <button onclick="appendToDisplay('4')">4</button>
             <button onclick="appendToDisplay('5')">5</button>
             <button onclick="appendToDisplay('6')">6</button>
