@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filmverwaltung</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+
+<div class="app-header">
+    <img src="ca71ebad1c4f1fcd704a887aa6ab38c4-removebg-preview.png" alt="Logo" class="logo-left"/>
+    <h1 class="header-title">Popalzai_CinemaMovie</h1>
+    <img src="8844133_stock-vector-cinema-and-movie-time-removebg-preview.png" alt="Movie Time" class="logo-right"/>
+</div>
+
+<div class="container">
+    <input type="text" id="suchfeld" placeholder="Suche nach Titel"/>
+
+    <form id="movie-form">
+        <input type="text" id="title" placeholder="Titel" required/>
+        <input type="number" id="year" placeholder="Erscheinungsjahr" required/>
+        <input type="number" id="duration" placeholder="Länge in min" required/>
+        <input type="url" id="trailer" placeholder="Trailer-Link (YouTube)"/>
+        <input type="file" id="image-upload" accept="image/*"/>
+        <div id="image-preview">Bildvorschau</div>
+        <button type="submit">Hinzufügen / Speichern</button>
+    </form>
+
+    <div id="movie-list"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

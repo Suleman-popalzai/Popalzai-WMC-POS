@@ -18,9 +18,9 @@ Falls du eine Frage als mehrdeutig empfindest, kannst du **–** ankreuzen und k
 
 Welche der folgenden Aussagen zu Arrow Functions sind richtig?
 
-- [X ] a) Arrow Functions haben kein eigenes `this`
+- [X] a) Arrow Functions haben kein eigenes `this`
 - [ ] b) Arrow Functions müssen immer mit `return` einen Wert zurückgeben
-- [X ] c) `(x) => x * 2` ist eine gültige Arrow Function
+- [X] c) `(x) => x * 2` ist eine gültige Arrow Function
 - [ ] d) Arrow Functions können nur mit `function` definiert werden
 
 ---
@@ -30,7 +30,7 @@ Welche der folgenden Aussagen zu Arrow Functions sind richtig?
 Was gibt `filter()` zurück?
 
 - [ ] a) Ein einzelnes Element aus dem Array
-- [X ] b) Ein neues Array mit allen Elementen, die die Bedingung erfüllen
+- [X] b) Ein neues Array mit allen Elementen, die die Bedingung erfüllen
 - [ ] c) `true` oder `false`
 - [ ] d) Die Anzahl der gefilterten Elemente
 
@@ -41,8 +41,8 @@ Was gibt `filter()` zurück?
 Welche Aussagen zu `map()` sind richtig?
 
 - [ ] a) `map()` verändert das ursprüngliche Array
-- [X ] b) `map()` gibt ein neues Array mit der gleichen Länge zurück
-- [C ] c) `map()` kann verwendet werden, um Objekte in Strings umzuwandeln
+- [X] b) `map()` gibt ein neues Array mit der gleichen Länge zurück
+- [X] c) `map()` kann verwendet werden, um Objekte in Strings umzuwandeln
 - [ ] d) `map()` benötigt immer zwei Parameter
 
 ---
@@ -51,9 +51,9 @@ Welche Aussagen zu `map()` sind richtig?
 
 Was ist der Zweck von `reduce()`?
 
-- [X ] a) Ein Array auf einen einzelnen Wert zu reduzieren
+- [X] a) Ein Array auf einen einzelnen Wert zu reduzieren
 - [ ] b) Alle Elemente eines Arrays zu filtern
-- [X ] c) Einen Akkumulator durch das Array zu iterieren
+- [X] c) Einen Akkumulator durch das Array zu iterieren
 - [ ] d) Das Array in umgekehrter Reihenfolge zu sortieren
 
 ---
@@ -62,9 +62,9 @@ Was ist der Zweck von `reduce()`?
 
 Welche Aussagen sind richtig?
 
-- [X ] a) Gibt das erste Element mit der angegebenen ID zurück
+- [X] a) Gibt das erste Element mit der angegebenen ID zurück
 - [ ] b) Gibt eine NodeList aller Elemente zurück
-- [ X] c) Gibt `null` zurück, wenn kein Element gefunden wird
+- [X] c) Gibt `null` zurück, wenn kein Element gefunden wird
 - [ ] d) Kann nur auf `<div>`-Elemente angewendet werden
 
 ---
@@ -73,10 +73,10 @@ Welche Aussagen sind richtig?
 
 Was passiert bei `<button onclick="changeColor()">Klick</button>`?
 
-- [X ] a) Beim Klicken wird die Funktion `changeColor()` aufgerufen
+- [X] a) Beim Klicken wird die Funktion `changeColor()` aufgerufen
 - [ ] b) `onclick` muss immer im `<script>`-Tag definiert werden
 - [ ] c) Der Code im `onclick`-Attribut wird beim Laden der Seite ausgeführt
-- [X ] d) Es können auch mehrere JavaScript-Anweisungen im `onclick` stehen
+- [X] d) Es können auch mehrere JavaScript-Anweisungen im `onclick` stehen
 
 ---
 
@@ -84,7 +84,7 @@ Was passiert bei `<button onclick="changeColor()">Klick</button>`?
 
 Wie kann man die Textfarbe eines Elements mit JavaScript ändern?
 
-- [ X] a) `element.style.color = "red"`
+- [X] a) `element.style.color = "red"`
 - [ ] b) `element.color = "red"`
 - [ ] c) `element.style.textColor = "red"`
 - [ ] d) `element.setAttribute("color", "red")`
@@ -102,9 +102,9 @@ const result = [1, 2, 3, 4]
 ```
 
 - [ ] a) `[3, 4]`
-- [ ] b) `[6, 8]`
+- [X] b) `[6, 8]`
 - [ ] c) `[2, 4, 6, 8]`
-- [ ] d) Ein Array mit 2 Elementen
+- [X] d) Ein Array mit 2 Elementen
 
 ---
 
@@ -112,9 +112,9 @@ const result = [1, 2, 3, 4]
 
 Wo können Inline-Scripts im HTML platziert werden?
 
-- [ ] a) Im `<head>`-Bereich
-- [ ] b) Im `<body>`-Bereich
-- [ ] c) Als Wert eines Event-Handlers wie `onclick`
+- [X] a) Im `<head>`-Bereich
+- [X] b) Im `<body>`-Bereich
+- [X] c) Als Wert eines Event-Handlers wie `onclick`
 - [ ] d) Inline-Scripts sind in HTML nicht erlaubt
 
 ---
@@ -132,14 +132,15 @@ Gegeben ist folgendes JSON:
 
 Welche Aussagen sind richtig?
 
-- [ ] a) Nach dem Parsen ist `data[0].name` gleich `"Anna"`
-- [ ] b) `data.filter(p => p.alter > 16)` gibt `[{"name": "Anna", "alter": 17}]` zurück
-- [ ] c) JSON-Schlüssel müssen in Anführungszeichen stehen
-- [ ] d) `data.length` ist `2`
+- [X] a) Nach dem Parsen ist `data[0].name` gleich `"Anna"`
+- [X] b) `data.filter(p => p.alter > 16)` gibt `[{"name": "Anna", "alter": 17}]` zurück
+- [X] c) JSON-Schlüssel müssen in Anführungszeichen stehen
+- [X] d) `data.length` ist `2`
 
 ---
 
 ## Freitext-Fragen (3 × 15 Punkte = 45 Punkte)
+
 
 ### Frage 11: filter und map kombinieren (15 Punkte)
 
@@ -158,11 +159,15 @@ Erkläre kurz, was jeder Teil des Ausdrucks bewirkt.
 
 **Antwort:**
 
+
 ```
-// Dein Code hier:
+// Dein Code hier: const result = zahlen.filter(x =>x>10).map(x=>x*2);
 
 
-// Erklärung:
+
+// Erklärung: 
+ also Zuerst nimmt filter nur die Zahlen, die natürlich größer als 10 sind.
+Danach verdoppelt map diese Zahlen.
 
 ```
 
@@ -182,6 +187,14 @@ Du darfst annehmen, dass das Element existiert.
 
 ```js
 // Dein Code hier:
+function toggleHintergrund(){
+    var box = document.getElementById("box");
+    if (box.style.backgroundColor === "white"){
+        box.style.backgroundColor = "yellow";
+    } else {
+        box.style.backgroundColor = "white";
+    }
+}
 
 ```
 
@@ -205,10 +218,13 @@ Erkläre dabei:
 
 ```js
 // Dein Code hier:
+const durchschnitt = noten.reduce(summe, note) => summe + note, 0 / noten.length;
 
 
 // Erklärung:
-
+Die Variable summe ist der Akkumulator und addiert alle Noten zusammen.
+man  beginnt bei 0, damit die Berechnung korrekt startet.
+Am Ende teilen wir die Summe durch die Anzahl der Noten, um den Durchschnitt zu berechnen.
 ```
 
 ---

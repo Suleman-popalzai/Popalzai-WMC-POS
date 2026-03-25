@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="top40.html">top40</a></li>
+        </ul>
+        <p style="background-color:  rgba(17, 119, 221, 0.627); padding: 10px;"></p>
+    </nav>
+    <h1>Kontaktformular</h1>
+    <p style="background-color: rgba(17, 119, 221, 0.627); padding: 10px;"></p>
+    <main>
+    <form>
+        <label><input type="radio" name="anrede" value="herr"> Herr</label>
+        <label><input type="radio" name="anrede" value="frau"> Frau</label><br>
+           <br> <input type="submit" value="Submit">
+          </form>
+          
+        <label for="vorName">Vorname:</label>
+        <input type="text" name="vorName" id="vorName" required>
+<br> <br>
+        <label for="nachName">Nachname:</label>
+        <input type="text" name="nachName" id="nachName" required>
+        <br><br>
+          <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email" required><br>
+            <br>
+        <label for="GIS">Zahlen Sie den GIS gebühr</label>
+        <select name="GIS" id="GIS" required> 
+            <option value="" disabled selected>Bitte wählen</option>
+            <option value="1">ja</option>
+            <option value="0">nein</option>
+        </select>
+<br><br>
+        <label for="area">Nachricht:</label> <br>
+        <textarea name="area" id="area">
+        </textarea>
+<br><br>
+        <label for="checkBox"><a href="agb.txt" download>AGB</a></label>
+        <input type="checkbox" name="checkBox" id="checkBox" required>
+<br> <br>
+       <button>Absenden</button>
+
+    </form>
+    <p style="background-color: rgba(17, 119, 221, 0.627); padding: 10px;"></p>
+<br>
+
+<video autoplay playsinline>
+
+</video>
+</main>
+
+
+<footer>
+    
+     <img src="https://orf.at/mojo/1_4_1/storyserver//news/common/images/orf-brick.svg" style ="width: 100px;"  alt="Das ORF Logo">
+
+
+     <address>
+        <strong>Suleman Popalzai</strong><br>
+        Spengergasse 20<br>
+        1050 Wien<br>
+        Österreich<br>
+        Telefon: <a href="tel:+43 0420420420">+43 0420420420</a><br>
+        E-Mail: <a href="mailto:pop211062@spengergasse.at">pop211062@spengergasse.at</a>
+      </address>
+</footer>
+
+<script>
+    const button = document.querySelector('button');
+
+    button.addEventListener('click', function() {
+        console.log('Button was clicked');
+    });
+
+
+    const video = document.querySelector('video');
+
+    navigator.mediaDevices.getUserMedia({video:true})
+    .then ((stream) => {
+        video.srcObject = stream;
+    });
+
+</script>
+
+</body>
+</html>

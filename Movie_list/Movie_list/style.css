@@ -1,0 +1,20 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(255, 145, 0); 
+  color: black;
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column; 
+  gap: 5px;               
+  max-width: 200px;        
+}
+
+input {
+  padding: 8px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 16px;
+}

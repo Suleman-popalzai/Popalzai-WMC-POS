@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Meine Filmliste</title>
+  <img src="ca71ebad1c4f1fcd704a887aa6ab38c4-removebg-preview.png" alt="Filmklappe" width="200">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>CINEMAMOVIE-LIST</h2>
+  <form id="film-form">
+    <input type="text" id="titel" placeholder="Titel eingeben" required>
+    <input type="number" id="jahr" placeholder="Erscheinungsjahr" required>
+  
+
+    <button onclick="sortMeineFilmeAZ()">Sort</button>
+   <br> <button type="submit">Hinzufuegen</button>
+  </form>
+
+  <h2> Filme</h2>
+  <div id="liste"></div>
+
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+
+</body>
+</html>

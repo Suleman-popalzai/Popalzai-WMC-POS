@@ -1,0 +1,110 @@
+/* Allgemeine Stile */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: rgba(17, 119, 221, 0.627);
+    color: #fff;
+    padding: 10px 20px;
+}
+
+header h1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header h1 img {
+    width: 120px;
+    height: auto;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hauptinhalt */
+main {
+    padding: 20px;
+}
+
+main h2 {
+    color: #097acb;
+}
+
+main p {
+    line-height: 1.6;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+}
+
+figure {
+    text-align: center;
+}
+
+/* Footer-Navigation */
+footer {
+    background-color: #2c8ace;
+    padding: 10px;
+    text-align: center;
+}
+
+footer a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Adresse */
+address {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+    font-style: normal;
+    margin-top: 20px;
+}
+
+address a {
+    color: rgba(0, 162, 255, 0.685);
+    text-decoration: none;
+}
+
+address a:hover {
+    text-decoration: underline;
+}
