@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Aufgabe</title>
+</head>
+<body>
+
+<h1 id="colorHeading">Meine Überschrift</h1>
+
+<p>Zähler: <span id="counter">0</span></p>
+
+<button id="btnPlus">+</button>
+<button id="btnMinus">-</button>
+<button id="btnReset">RESET</button>
+
+<br><br>
+
+<button id="btnZufall">ZUFALL</button>
+
+<script>
+
+// Zähler speichern
+var zaehler = 0;
+
+// Elemente holen
+var counter = document.getElementById("counter");
+var plusBtn = document.getElementById("btnPlus");
+var minusBtn = document.getElementById("btnMinus");
+var resetBtn = document.getElementById("btnReset");
+var zufallBtn = document.getElementById("btnZufall");
+var heading = document.getElementById("colorHeading");
+
+// Anzeige aktualisieren
+function update() {
+    counter.textContent = zaehler;
+}
+
+// Anfangswert anzeigen
+update();
+
+// Aufgabe 1 + 3 (EventListener)
+plusBtn.addEventListener("click", function() {
+    zaehler = zaehler + 1;
+    update();
+});
+
+minusBtn.addEventListener("click", function() {
+    zaehler = zaehler - 1;
+    update();
+});
+
+resetBtn.addEventListener("click", function() {
+    zaehler = 0;
+    update();
+});
+
+//  (Zufallsfarbe)
+zufallBtn.addEventListener("click", function() {
+    var r = Math.floor(Math.random() * 256);
+    var g = Math.floor(Math.random() * 256);
+    var b = Math.floor(Math.random() * 256);
+
+    var farbe = "rgb(" + r + ", " + g + ", " + b + ")";
+    heading.style.color = farbe;
+});
+
+</script>
+
+</body>
+</html>
