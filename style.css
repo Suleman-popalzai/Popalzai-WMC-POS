@@ -1,0 +1,102 @@
+/* =========================
+   Farben
+========================= */
+:root {
+  --bg: #120000;
+  --bg-card: #1d0505;
+  --border: #5a1515;
+  --text: #ffffff;
+  --accent: #e8b84b;
+}
+
+/* =========================
+   Allgemein
+========================= */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(
+    180deg,
+    #1a0000 0%,
+    #120000 50%,
+    #0a0000 100%
+  );
+  color: var(--text);
+}
+
+/* =========================
+   Header
+========================= */
+header {
+  background-color: #200000;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid var(--border);
+}
+
+h1 {
+  margin: 0;
+  color: var(--accent);
+}
+
+/* =========================
+   Formular
+========================= */
+form {
+  padding: 20px;
+  text-align: center;
+}
+
+input,
+button {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid var(--border);
+}
+
+button {
+  background-color: var(--accent);
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* =========================
+   Filme
+========================= */
+#movieList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.movie {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.movie h3 {
+  margin-top: 0;
+  color: var(--accent);
+}
+
+.movie p {
+  margin: 5px 0;
+}
+
+/* =========================
+   Responsive
+========================= */
+@media (max-width: 600px) {
+  #movieList {
+    grid-template-columns: 1fr;
+  }
+}
